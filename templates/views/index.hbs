@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    {{>header}}
+
+    {{#each newData}}
+    <h1>Title:{{title}}</h1>
+    {{#each sellerInfo}}
+    <h3>Seller:{{sellerUserName}}</h3>
+    {{/each}}
+    {{#each sellingStatus}}
+    <h4>Bids:{{sellingState}}</h4>
+    {{/each}}
+    {{/each}}
+
+</body>
+
+</html>
